@@ -59,7 +59,7 @@ public class MainController : MonoBehaviour
 
 		nextSceneName = "Menu Scene";
 		sceneState = SceneState.Reset;
-		camera.orthographicSize = Screen.height/2;
+		GetComponent<Camera>().orthographicSize = Screen.height/2;
 	}
 	
 	protected void OnDestroy()
